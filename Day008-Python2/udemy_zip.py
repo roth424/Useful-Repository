@@ -1,5 +1,6 @@
 import csv
-path = "C:/TempDataDir/web_starter.csv"
+import os
+path = os.path.join('Resources','web_starter.csv')
 title = []
 price = []
 subscribers = []
@@ -11,7 +12,7 @@ with open(path, newline='', encoding="utf8") as csvfile:
         subscribers.append(row[5])
 
 newdata = zip(title, price, subscribers)
-path = "C:/TempDataDir/web_end.csv"
+path = os.path.join('Resources', 'web_end.csv')
 with open(path, 'w', newline='') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=",")
     csvwriter.writerow(['Name','Price','Subscribers'])
