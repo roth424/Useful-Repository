@@ -1,0 +1,11 @@
+conda install -c conda-forge gmaps
+conda install -n base -c conda-forge widgetsnbextension
+conda install -n PythonData37 -c conda-forge ipywidgets
+conda install -n PythonData37 -c conda-forge gmaps
+conda install -n base -c conda-forge nodejs
+conda install -n PythonData37 -c conda-forge nodejs
+jupyter nbextension enable --py gmaps
+pip install census
+pip install us
+
+census_key = "90a3b4413de14a5a52626999ba58589f7a37f90d"
